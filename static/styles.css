@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+.slide-in {
+    animation: slideIn 0.5s ease-out; /* Adjust the duration here */
+    position: absolute;
+    top: 0; /* Start from the top */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, 0);
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
